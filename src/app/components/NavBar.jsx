@@ -1,4 +1,5 @@
 'use client'
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -12,9 +13,11 @@ function NavBar() {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* LOGO */}
-              <Link href="/">
-                <h2 className="text-2xl text-cyan-600 font-bold ">LOGO</h2>
-              </Link>
+              <Image 
+                src="furestaLogo.svg"
+                height={70}
+                width={70}
+              />
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
                 <button
